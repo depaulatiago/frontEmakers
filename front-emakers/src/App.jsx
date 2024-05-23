@@ -1,49 +1,38 @@
-import { useState } from 'react'
-import "./App.css"
-import React from 'react';
+import "./App.css";
+import React from "react";
 
 function TelaLogin() {
   return (
-    <div>
-      <h1>Entre em Sua Conta</h1>
-      <form>
-        <label>
-          E-mail:
-          <input type="email" name="email" />
-        </label>
-        <label>
-          Senha:
-          <input type="password" name="password" />
-        </label>
-        <button type="submit">Entrar</button>
-      </form>
-    </div>
-  );
-}
+    
+    <div class="div-principal-tela-login">
+    <img src="src/img/brancologo.png" alt="Logo Emakers" class="logo-emakers" draggable="false"/>
 
-// Componente para a tela de registro
-function TelaRegistro() {
-  return (
-    <div>
-      <h1>Novo Aqui?</h1>
-      <p>Registre-se e venha fazer parte da maior rede social!</p>
-      <button>Registrar-se</button>
-    </div>
-  );
-}
+      <div class="div-esquerda-tela-login">
+        <h1 class="entre">Entre em Sua Conta</h1>
+        <form action="" autocomplete="off" class="form-login">
+          <fieldset>
+            <label for="email" class="form-email">
+              E-mail:
+              <input type="email" name="email" />
+              </label>
+            <label for="password" class="form-password">
+              Senha:
+              <input type="password" name="password" />
+            </label>
 
-// Componente principal que renderiza a TelaLogin ou TelaRegistro
-class SegundaTela extends React.Component {
-  render() {
-    // Substitua 'true' pela sua lógica para mostrar a tela de login ou registro
-    const mostrarTelaLogin = true;
-
-    return (
-      <div>
-        {mostrarTelaLogin ? <TelaLogin /> : <TelaRegistro />}
+            <button type="submit" class="form-button-entrar">Entrar</button>
+          </fieldset>
+        </form>
       </div>
-    );
-  }
+
+      <div class="div-direita-tela-login">
+        <h1>Novo Aqui?</h1>
+        <p>Registre-se e venha<br/> fazer parte da<br/> maior rede social!</p>
+        <button class="form-button-registrar">Registrar-se</button>
+      </div>
+      
+    </div>
+  );
 }
 
-export default SegundaTela;
+export default TelaLogin;
