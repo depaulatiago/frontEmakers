@@ -1,38 +1,17 @@
-import "./App.css";
 import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import TelaLogin from "./components/TelaLogin";
+import TelaRegistro from "./components/TelaRegistro";
 
-function TelaLogin() {
+function App() {
   return (
-    
-    <div class="div-principal-tela-login">
-    <img src="src/img/brancologo.png" alt="Logo Emakers" class="logo-emakers" draggable="false"/>
-
-      <div class="div-esquerda-tela-login">
-        <h1 class="entre">Entre em Sua Conta</h1>
-        <form action="" autocomplete="off" class="form-login">
-          <fieldset>
-            <label for="email" class="form-email">
-              E-mail:
-              <input type="email" name="email" />
-              </label>
-            <label for="password" class="form-password">
-              Senha:
-              <input type="password" name="password" />
-            </label>
-
-            <button type="submit" class="form-button-entrar">Entrar</button>
-          </fieldset>
-        </form>
-      </div>
-
-      <div class="div-direita-tela-login">
-        <h1>Novo Aqui?</h1>
-        <p>Registre-se e venha<br/> fazer parte da<br/> maior rede social!</p>
-        <button class="form-button-registrar">Registrar-se</button>
-      </div>
-      
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={TelaLogin} />
+        <Route path="/registro" component={TelaRegistro} />
+      </Switch>
+    </Router>
   );
 }
 
-export default TelaLogin;
+export default App;
