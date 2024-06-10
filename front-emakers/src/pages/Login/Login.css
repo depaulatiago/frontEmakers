@@ -1,0 +1,166 @@
+/* FORMATACAO GERAL DA PAGINA */
+
+:root {
+    --roxo: #5e2075;
+    --laranja: #fe690e;
+    --branco: #FEFCFF;
+    --cinzaclaro: #EFEFEF;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--branco);
+  }
+  
+  .logo-emakers {
+    position: fixed;
+    width: 450px;
+    height: auto;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+  }
+  
+  button{
+    width: 270px;
+    height: 55px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2em;
+    padding: .7em;
+    border: none;
+    border-radius: 50px;
+  }
+  
+  .div-principal-tela-login {
+    overflow: hidden;
+  }
+  
+   /* PARTE ESQUERDA DA PAGINA */ 
+  
+  
+   fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  label{
+    width: 80%;
+    box-sizing: border-box;
+  }
+  
+  input{
+    margin: auto;
+    background-color: var(--cinzaclaro);
+    border: none;
+    width: 100%;
+    height: 55px;
+    color: black;
+    font-size: 1.2em;
+    margin-bottom: 4em;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  input:invalid:focus{
+    border-bottom: 2px solid rgba(255, 0, 0, 0.2);
+  }
+  input:valid:focus{
+    border-bottom: 2px solid var(--roxo);
+  }
+  .form-button-entrar{
+    background-color: var(--roxo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  
+  .form-email {
+    color: var(--roxo);
+  }
+  
+  .entre {
+    color: var(--roxo);
+  }
+  
+  .form-password {
+    color: var(--roxo);
+  }
+  
+  .div-esquerda-tela-login {
+    background-color: white;
+    width: 55%;
+    float: left;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0%;
+  }
+  
+  .form-login {
+    width: 70%;
+    padding: 1em;
+  }
+  
+  .div-esquerda-tela-login h1{
+    font-size: 3em;
+  }
+  
+  /* PARTE DIREITA DA PAGINA */
+  .div-direita-tela-login {
+    background: linear-gradient(to bottom, #75206c 50%, var(--laranja));
+    color: white;
+    width: 45%;
+    float: right;
+    height: 100vh;
+    display: flex;
+    margin-bottom: 4em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-left: 5px solid var(--laranja);
+  }
+  
+  .form-button-registrar{
+    background-color: var(--laranja);
+  }
+  
+  .div-direita-tela-login h1{
+    font-size: 3em;
+  }
+  
+  .div-direita-tela-login p{
+    text-align: center; 
+    width: 85%;
+    font-size: 3em;
+  }
+  
+  
+  @media screen and (max-width: 360px){
+    input{
+      margin: auto;
+      background-color: var(--roxo);
+      border: none;
+      width: 100%;
+      height: 55px;
+      color: black;
+      font-size: 1.2em;
+      margin-bottom: 4em;
+      border: none;
+      border-radius: 50px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    }
+  }
