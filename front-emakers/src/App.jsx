@@ -1,38 +1,19 @@
-import "./App.css";
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import TelaLogin from "./pages/login/TelaLogin";
+import TelaRegistro from "./pages/registro/TelaRegistro";
+import TelaHome from "./pages/home/TelaHome"; // Importe o componente da tela inicial
 
-function TelaLogin() {
+function App() {
   return (
-    
-    <div class="div-principal-tela-login">
-    <img src="src/img/brancologo.png" alt="Logo Emakers" class="logo-emakers" draggable="false"/>
-
-      <div class="div-esquerda-tela-login">
-        <h1 class="entre">Entre em Sua Conta</h1>
-        <form action="" autocomplete="off" class="form-login">
-          <fieldset>
-            <label for="email" class="form-email">
-              E-mail:
-              <input type="email" name="email" />
-              </label>
-            <label for="password" class="form-password">
-              Senha:
-              <input type="password" name="password" />
-            </label>
-
-            <button type="submit" class="form-button-entrar">Entrar</button>
-          </fieldset>
-        </form>
-      </div>
-
-      <div class="div-direita-tela-login">
-        <h1>Novo Aqui?</h1>
-        <p>Registre-se e venha<br/> fazer parte da<br/> maior rede social!</p>
-        <button class="form-button-registrar">Registrar-se</button>
-      </div>
-      
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<TelaLogin />} />
+        <Route path="/registro" element={<TelaRegistro />} />
+        <Route path="/home" element={<TelaHome />} /> {/* Adicione esta linha */}
+      </Routes>
+    </Router>
   );
 }
 
-export default TelaLogin;
+export default App;
