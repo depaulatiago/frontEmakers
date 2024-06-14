@@ -39,7 +39,7 @@ function TelaRegistro() {
               </div>
             </div>
 
-            <button type="submit">Registrar-se</button>
+            <button type="submit" >Registrar-se</button>
           </fieldset>
         </form>
         <a href="telalogin.html">Já possui conta?</a>
