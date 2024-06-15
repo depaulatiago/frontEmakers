@@ -1,5 +1,5 @@
 import React from "react";
-import "./registro.css";
+import "./telaregistro.css";
 import { useNavigate } from "react-router-dom";
 
 function TelaRegistro() {

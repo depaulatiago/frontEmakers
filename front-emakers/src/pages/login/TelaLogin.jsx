@@ -1,5 +1,5 @@
 // TelaLogin.js
-import "./login.css";
+import "./telalogin.css";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 

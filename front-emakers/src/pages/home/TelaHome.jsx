@@ -1,5 +1,5 @@
 import React from "react";
-import "./home.css";
+import "./telahome.css";
 
 function TelaHome() {
   return (
