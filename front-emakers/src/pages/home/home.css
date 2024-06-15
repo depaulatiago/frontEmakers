@@ -92,14 +92,14 @@
 
     .profile h1.nome {
          margin-top: 70px;
-         font-size: 2em;
+         font-size: 1.7em;
          font-weight: 100;
          margin-bottom: 0;
          padding: 0 30px;
     }
 
     .profile h3.biografia {
-         font-size: 1.5em;
+         font-size: 1em;
          font-weight: 100;
          margin-top: 0;
          padding: 0 30px;
@@ -235,7 +235,7 @@
     .footer-home {
          border-top: 3px solid var(--laranja);
          max-width: 80%;
-         margin: 150px auto;
+         margin: 200px auto;
          display: flex;
          flex-direction: row;
          justify-content: center;

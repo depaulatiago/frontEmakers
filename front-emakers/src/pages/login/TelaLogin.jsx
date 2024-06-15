@@ -15,25 +15,23 @@ function TelaLogin() {
     }
 
 return (
-    <div>
-        <div class="div-principal-tela-login">
-            <div class="div-esquerda-tela-login">
-                <img src="src/img/brancologo.png" alt="Logo Emakers" class="logo-emakers" draggable="false" />
-                <div class="div-esquerda-conteudo"></div>
-                <h1 class="entre">Entre em Sua Conta</h1>
-                <form action="" autocomplete="off" class="form-login">
-                    <fieldset>
-                        <label for="email" class="form-email">E-mail:</label>
-                        <input type="email" name="email" />
-                        <label for="password" class="form-password">Senha:</label>
-                        <div class="password-container">
-                            <input type="password" name="password" id="password" />
-                            <i class="bi bi-eye-fill" id="btn-password" onclick="mostrarSenha()"></i>
-                        </div>
-                        <button type="submit" class="form-button-entrar" onClick={handleEntrarClick}>Entrar</button>
-                    </fieldset>
-                </form>
-            </div>
+    <div class="div-principal-tela-login">
+        <div class="div-esquerda-tela-login">
+            <img src="src/img/brancologo.png" alt="Logo Emakers" class="logo-emakers" draggable="false" />
+            <div class="div-esquerda-conteudo"></div>
+            <h1 class="entre">Entre em Sua Conta</h1>
+            <form action="" autocomplete="off" class="form-login">
+                <fieldset>
+                    <label for="email" class="form-email">E-mail:</label>
+                    <input type="email" name="email" />
+                    <label for="password" class="form-password">Senha:</label>
+                    <div class="password-container">
+                        <input type="password" name="password" id="password" />
+                        <i class="bi bi-eye-fill" id="btn-password" onclick="mostrarSenha()"></i>
+                    </div>
+                    <button type="submit" class="form-button-entrar" onClick={handleEntrarClick}>Entrar</button>
+                </fieldset>
+            </form>
         </div>
         <div class="div-direita-tela-login">
             <div class="div-direita-conteudo">

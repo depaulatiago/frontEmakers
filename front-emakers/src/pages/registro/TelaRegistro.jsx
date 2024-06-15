@@ -1,11 +1,21 @@
 import React from "react";
 import "./registro.css";
+import { useNavigate } from "react-router-dom";
 
 function TelaRegistro() {
+  const navigate = useNavigate();
+
+    const handleEntrarClick = () => {
+        navigate("/home");
+    }
+
+    const handleLoginClick = () => {
+        navigate("/login");
+    }
   return (
     <div>
       <div class="top-tela-registro direita-tela-registro">
-        <img src="../img/emakerslogo1x1.png" alt="" />
+        <img src="src/img/logo.png" alt="" />
         <h1>Venha fazer parte da maior rede social também!</h1>
       </div>
       <div class="bot-tela-registro esquerda-tela-registro">
@@ -39,10 +49,10 @@ function TelaRegistro() {
               </div>
             </div>
 
-            <button type="submit" >Registrar-se</button>
+            <button type="submit" onClick={handleEntrarClick} >Registrar-se</button>
           </fieldset>
         </form>
-        <a href="telalogin.html">Já possui conta?</a>
+        <a onClick={handleLoginClick}>Já possui conta?</a>
       </div>
     </div>
   );
