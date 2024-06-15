@@ -8,6 +8,7 @@ function App() {
   return (
     <Router>
       <Routes>
+      <Route path="/" element={<TelaLogin />} />
         <Route path="/login" element={<TelaLogin />} />
         <Route path="/registro" element={<TelaRegistro />} />
         <Route path="/home" element={<TelaHome />} /> {/* Adicione esta linha */}
